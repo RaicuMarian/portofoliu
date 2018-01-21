@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  line-height: 1.4;
+  letter-spacing: 1.4;
+  color: #f4f4f4;
+  font-family: lato, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+/* NAV */
+
+nav{
+  background-color: #fff ;
+  height: 56px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  box-shadow: 0px 1px 5px black;
+}
+
+.menu ul{
+  list-style-type: none;
+  float: right;
+}
+
+.menu ul a{
+  text-decoration: none;
+  color: #b14c5a;
+}
+
+.menu li{
+  float: left;
+  color: #b14c5a;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.menu li:hover{
+  border-bottom: #b14c5a solid 3px;
+}
+
+.active{
+  border-bottom: #b14c5a solid 3px;
+}
+
+/* Prima Sectiune */
+
+.bigImage{
+  background: linear-gradient(to right,
+   rgba(44, 62, 80, 0.6),
+   rgba(177, 76, 90, 0.6)),
+   url(../Images/mountain.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#myName{
+  color: #b14c5a;
+  font-size: 2em;
+}
+
+.mySelf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mySelf p{
+  padding: 25px 5px 5px 5px;
+}
+
+.socialMedia i {
+  padding: 2px;
+}
+
+.button1 button{
+  margin-top: 50px;
+ background-color: antiquewhite;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 20px;
+ color: darkslategrey;
+ box-shadow: 0px 3px 5px black;
+}
+
+.button1 button:hover{
+  background-color: #b14c5a;
+  color: antiquewhite;
+  transition: 0.7s;
+}
