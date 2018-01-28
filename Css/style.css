@@ -6,7 +6,8 @@
 body{
   line-height: 1.4;
   letter-spacing: 1.4;
-  color: #f4f4f4;
+  background-color: #f4f4f4;
+  color: #fff;
   font-family: lato, Helvetica, sans-serif;
   font-size: 17px;
 }
@@ -20,31 +21,24 @@ nav{
   width: 100vw;
   top: 0;
   box-shadow: 0px 1px 5px black;
+  z-index: 3;
 }
 
-.menu ul{
-  list-style-type: none;
-  float: right;
-}
-
-.menu ul a{
+.nav-wrapper ul a{
   text-decoration: none;
   color: #b14c5a;
 }
 
-.menu li{
-  float: left;
-  color: #b14c5a;
-  padding: 10px 20px;
-  margin-top: 10px;
-}
-
-.menu li:hover{
+.nav-wrapper li:hover{
   border-bottom: #b14c5a solid 3px;
 }
 
 .active{
   border-bottom: #b14c5a solid 3px;
+}
+
+.fa-bars{
+  color: #b14c5a;
 }
 
 /* Prima Sectiune */
@@ -96,4 +90,136 @@ nav{
   background-color: #b14c5a;
   color: antiquewhite;
   transition: 0.7s;
+}
+
+/* Sectiunea main */
+
+.main{
+  color:black;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+  justify-content: center;
+  
+}
+
+.cardTitlu {
+  background-color: #b14c5a;
+  text-align: center;
+  width: 30%;
+  min-height: 70vh;
+  border-radius: 5px 0 0  5px;
+  box-shadow: 5px 0 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.cardTitlu h4{
+  color: #fff;
+  font-weight: lighter;
+  padding-top: 50px;
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 20px;
+}
+
+.cardTitlu h4::after{
+  content: " ";
+  position: absolute;
+  top: 130%;
+  left: 14vw;
+  height: 1px;
+  width: 35px;
+  background: #fff;
+  z-index: 2;
+}
+
+.cardDetalii {
+  background-color: white;
+  color: #919191;
+  text-align: center;
+  width: 40%;
+  min-height: 60vh;
+  box-shadow: 5px 0 4px rgba(0, 0, 0, 0.30);
+}
+
+.cardDetalii p{
+  padding: 2em;
+}
+
+/* Sectiunea A - Skills */
+
+.container-grid{
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+}
+
+.item-0{
+  color: #919191;
+  margin-top: 1.5em;
+  font-size: 3em;
+  position: relative;
+}
+
+.item-0 h3{
+  font-size: 17px;
+}
+
+.item-0::after{
+  content: " ";
+  position: absolute;
+  top: 60%;
+  left: 47vw;
+  height: 1px;
+  width: 30px;
+  background: #b14c5a;
+}
+
+.item{
+  text-align: center;
+  padding: 2em;  
+}
+
+.item h4{
+  margin: 1em 0;
+  color: #b14c5a;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.item p, li{
+  color: #919191;
+}
+
+.item-1 ul{
+  list-style: none;
+}
+
+.item i{
+  color: #b14c5a;
+  font-size: 5em;
+}
+
+/* Projects */
+
+.container-projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+  grid-template-areas: printscreen,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+.project{
+  background-color: red;
+}
+
+.project-3,
+.project-6,
+.project-9 {
+  grid-column: span 2;
 }
