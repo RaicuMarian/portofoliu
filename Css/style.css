@@ -12,6 +12,27 @@ body{
   font-size: 17px;
 }
 
+.item-0{
+  color: #919191;
+  margin-top: 1.5em;
+  font-size: 3em;
+  position: relative;
+}
+
+.item-0 h3{
+  font-size: 17px;
+}
+
+.item-0::after{
+  content: " ";
+  position: absolute;
+  top: 60%;
+  left: 49%;
+  height: 1px;
+  width: 30px;
+  background: #b14c5a;
+}
+
 /* NAV */
 
 nav{
@@ -159,25 +180,9 @@ nav{
   grid-gap: 1em;
 }
 
-.item-0{
-  color: #919191;
-  margin-top: 1.5em;
-  font-size: 3em;
-  position: relative;
-}
-
-.item-0 h3{
-  font-size: 17px;
-}
-
-.item-0::after{
-  content: " ";
-  position: absolute;
-  top: 60%;
-  left: 47vw;
-  height: 1px;
-  width: 30px;
-  background: #b14c5a;
+.item .fa{
+  font-size: 3.5em;
+  font-weight: lighter;
 }
 
 .item{
@@ -209,17 +214,77 @@ nav{
 
 .container-projects{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5em;
-  grid-template-areas: printscreen,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-gap: 20px;
+  grid-template-areas: 
+   "proiect-1    descriere-1"
+   "descriere-2    proiect-2"
+}
+
+.project-1{
+  grid-area: proiect-1;
+}
+
+.project-2 {
+  grid-area: descriere-1;
+}
+
+.project-3 {
+  grid-area: descriere-2;
+}
+
+.project-4 {
+  grid-area: proiect-2;
+}
+
+@media (max-width: 700px){
+
+  .container-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    grid-template-areas: 
+     "proiect-1"  
+     "descriere-1"
+     "proiect-2"
+     "descriere-2"
+  }
+
 }
 
 .project{
-  background-color: red;
+  color: #919191;
+  padding: 20px;
+  text-align: center;
 }
 
-.project-3,
-.project-6,
-.project-9 {
-  grid-column: span 2;
+.projects img{
+  width: 100%;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.30);
+}
+
+.project p{
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.details-btn{
+  display: grid;
+  justify-content: center;
+}
+
+.btn-2{
+  margin: 5px;
+  background-color: #f4f4f4;
+  border: #b14c5a 1px solid;
+  padding: 10px;
+  color: #b14c5a;
+}
+
+.btn-2:hover{
+ background-color: #b14c5a;
+ color: #f4f4f4;
+ transition: 0.5s;
+ border: #f4f4f4 1px solid;
+
 }
