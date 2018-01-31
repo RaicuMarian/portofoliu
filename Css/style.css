@@ -286,5 +286,22 @@ nav{
  color: #f4f4f4;
  transition: 0.5s;
  border: #f4f4f4 1px solid;
-
 }
+
+/* Contact */
+
+.container-contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+}
+
+.contact .adress p{
+  color: #b14c5a;
+  padding-left: 50px;
+}
+
+.contact .adress h3{
+  color: #919191;
+  padding-left: 50px;
+}
+
