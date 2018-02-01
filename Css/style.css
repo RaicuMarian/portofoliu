@@ -288,29 +288,35 @@ nav{
 
 .container-contact{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: #b14c5a;
 }
 
 .contact .adress p{
-  color: #b14c5a;
+  color: #fff ;
+  font-style: italic;
+}
+
+.contact .item-0 h3{
+  color: #919191;
 }
 
 .contact h3{
-  color: #919191;
-  position: relative;
+  color: #fff;
 }
 
 .contact .resume i{
   font-size: 40px;
   font-weight: lighter;
-  border: 1px solid #b14c5a;
+  border: 1px solid #f4f4f4;
   padding: 10px 60px;
   border-radius: 30px;
   margin-top: 50px;
+  color: #f4f4f4;
 }
 
 .contact .resume i:hover{
-  background-color: #b14c5a;
-  color: #fff;
+  background-color: #f4f4f4;
+  color: #b14c5a;
   transition:0.5s;
 }
