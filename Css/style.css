@@ -298,7 +298,7 @@ nav{
 }
 
 .contact .item-0 h3{
-  color: #919191;
+  color: #f4f4f4;
 }
 
 .contact h3{
@@ -320,3 +320,23 @@ nav{
   color: #b14c5a;
   transition:0.5s;
 }
+
+.item-contact{
+  background-color: #b14c5a;
+  margin-top: 150px;
+  box-shadow: 0px 1px 10px black;
+}
+
+.item-contact .item-0{
+  padding: 1.7em;
+}
+
+.item-contact .item-0::after{
+    content: " ";
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    height: 1px;
+    width: 30px;
+    background: #fff;
+  }
