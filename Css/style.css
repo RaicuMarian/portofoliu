@@ -109,6 +109,10 @@ nav{
   transition: 0.7s;
 }
 
+/* General queries */
+
+
+
 /* Sectiunea main */
 
 .main{
@@ -301,8 +305,9 @@ nav{
   color: #f4f4f4;
 }
 
-.contact h3{
+.contact h4{
   color: #fff;
+  font-size: 1.9em;
 }
 
 .contact .resume i{
