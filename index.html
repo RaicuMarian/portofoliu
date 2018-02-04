@@ -23,24 +23,24 @@
       <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Acasa</a></li>
-        <li><a href="#">Despre mine</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Proiecte</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Acasa</a></li>
+        <li><a href="#about">Despre mine</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proiecte">Proiecte</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>  
   </nav>
-  <ul class="side-nav" id="mobile-demo">
-    <li><a href="#">Acasa</a></li>
-    <li><a href="#">Despre mine</a></li>
-    <li><a href="#">Skills</a></li>
-    <li><a href="#">Proiecte</a></li>
-    <li><a href="#">Contact</a></li>
+  <ul class="side-nav indigo lighten-4" id="mobile-demo">
+    <li><a href="#home">Acasa</a></li>
+    <li><a href="#about">Despre mine</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#proiecte">Proiecte</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 <!-- Big Image -->
 
-  <section class="bigImage">
+  <section id="home" class="bigImage">
     <div class="mySelf">
       <h1 id="myName">Raicu Marian</h1>
       <div class="socialMedia">
@@ -55,9 +55,9 @@
     </div>
 
   </section>
-
+ <div id="about"></div>
 <!-- About me -->
-  <section class="main">
+  <section  class="main">
     <div class="container-card">
       <div class="cardTitlu">
         <h4>Despre mine</h4>
@@ -69,7 +69,7 @@
   </section>
 
 <!-- Skills -->
-  <section class="section-a skills">
+  <section id="skills" class="section-a skills">
     <div class="item item-0"><h3>SKILLS</h3></div>
     <div class="container-grid">
       
@@ -97,7 +97,7 @@
   </section>
 
 <!-- Projects -->
-  <section class="projects">
+  <section id="proiecte" class="projects">
     <div class="item item-0">
       <h3>PROIECTE</h3>
     </div>
@@ -122,7 +122,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="item-contact">
       <div class="item item-0">
         <h3>CONTACT</h3>
@@ -153,5 +153,6 @@
   <script>
   $(".button-collapse").sideNav();
   </script>
+  <script src="app.js"></script>
 </body>
 </html>
