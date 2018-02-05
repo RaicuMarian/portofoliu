@@ -7,3 +7,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
 });
+
+function closeNav(){
+  document.getElementById('mobile-demo').style.left = "500px";
+}
