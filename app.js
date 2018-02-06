@@ -1,4 +1,4 @@
-// Smooth scrolling
+// Smooth scrolling JQ
 
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
@@ -8,6 +8,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
   }, 500);
 });
 
-function closeNav(){
-  document.getElementById('mobile-demo').style.left = "500px";
-}
+// Close Nav JQ
+
+$( document ).ready(function(){
+  $('.button-collapse').sideNav({
+        closeOnClick: true
+      }
+    );
+  });
