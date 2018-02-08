@@ -346,3 +346,15 @@ nav{
     width: 30px;
     background: #fff;
   }
+
+  /* Footer */
+
+  .footer{
+    color: #b14c5a;
+    height: 10vh;
+    text-align: center;
+  }
+
+  .footer p{
+    padding: 20px;
+  }
