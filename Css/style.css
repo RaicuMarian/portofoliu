@@ -74,6 +74,10 @@ nav{
   justify-content: center;
 }
 
+.socialMedia a:link{
+  color: #fff;
+}
+
 #myName{
   color: #b14c5a;
   font-size: 2em;
@@ -92,6 +96,7 @@ nav{
 
 .socialMedia i {
   padding: 2px;
+  color: inherit;
 }
 
 .button1 button{
@@ -118,6 +123,8 @@ nav{
 
 .main{
   color:black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .container-card {
@@ -136,6 +143,14 @@ nav{
   border-radius: 5px 0 0  5px;
   box-shadow: 5px 0 4px rgba(0, 0, 0, 0.25);
   z-index: 2;
+}
+
+@media (max-width:700px) {
+  .cardTitlu: {max-height: 70vh;}
+  .cardDetalii{ 
+    max-height: 60vh;
+    font-size: 14px;
+  }
 }
 
 .cardTitlu h4{
