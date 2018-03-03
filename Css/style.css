@@ -94,9 +94,9 @@ nav{
   padding: 25px 5px 5px 5px;
 }
 
-.socialMedia i {
-  padding: 2px;
-  color: inherit;
+.socialMedia a {
+ font-size: 1.3em;
+ margin: 3px;
 }
 
 .button1 button{
@@ -137,6 +137,8 @@ nav{
 
 .cardTitlu {
   background-color: #b14c5a;
+  display: grid;
+  align-items: center;
   text-align: center;
   width: 30%;
   min-height: 70vh;
@@ -146,23 +148,21 @@ nav{
 }
 
 @media (max-width:700px) {
-  .cardTitlu: {max-height: 70vh;}
+  .cardTitlu {max-height: 70vh;}
   .cardDetalii{ 
     max-height: 60vh;
     font-size: 14px;
   }
 }
 
-.cardTitlu h4{
+.cardTitlu p{
   color: #fff;
-  font-weight: lighter;
-  padding-top: 50px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   position: relative;
-  font-size: 20px;
+  font-size: 22px;
 }
 
-.cardTitlu h4::after{
+.cardTitlu p::after{
   content: " ";
   position: absolute;
   top: 130%;
@@ -186,6 +186,12 @@ nav{
   padding: 2em;
 }
 
+@media(min-width: 700px){
+
+  .cardDetalii p{
+    margin-top: 10vh;
+  }
+}
 /* Sectiunea A - Skills */
 
 .container-grid{
@@ -194,11 +200,6 @@ nav{
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 1em;
-}
-
-.item .fa{
-  font-size: 3.5em;
-  font-weight: lighter;
 }
 
 .item{
@@ -221,36 +222,41 @@ nav{
   list-style: none;
 }
 
-.item i{
-  color: #b14c5a;
-  font-size: 5em;
-}
-
 /* Projects */
 
 .container-projects{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-template-columns: 1fr fr;
+  grid-template-rows: 1fr;
   grid-gap: 20px;
   grid-template-areas: 
-   "proiect-1    descriere-1"
-   "descriere-2    proiect-2"
+   "proiect-1      descriere-1"
+   "descriere-2      proiect-2"
+   "proiect-3      descriere-3"
 }
 
 .project-1{
   grid-area: proiect-1;
 }
 
-.project-2 {
+.descriere-1 {
   grid-area: descriere-1;
 }
 
-.project-3 {
+.descriere-2 {
   grid-area: descriere-2;
 }
 
-.project-4 {
+.project-2 {
   grid-area: proiect-2;
+}
+
+.project-3 {
+  grid-area: proiect-3;
+}
+
+.descriere-3 {
+  grid-area: descriere-3;
 }
 
 @media (max-width: 700px){
@@ -264,6 +270,8 @@ nav{
      "descriere-1"
      "proiect-2"
      "descriere-2"
+     "proiect-3"
+     "descriere-3"
   }
 
 }
@@ -272,11 +280,13 @@ nav{
   color: #919191;
   padding: 20px;
   text-align: center;
+  margin-bottom: 90px;
 }
 
 .projects img{
   width: 100%;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.30);
+  /* box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.30); */
+  filter: drop-shadow(3px 3px 10px #000);
 }
 
 .project p{
@@ -293,6 +303,7 @@ nav{
   margin: 5px;
   background-color: #f4f4f4;
   border: #b14c5a 1px solid;
+  border-radius: 10px; 
   padding: 10px;
   color: #b14c5a;
 }
@@ -304,6 +315,10 @@ nav{
  border: #f4f4f4 1px solid;
 }
 
+.usedTech{
+  color: #b14c5a;
+  margin-top: 5px;
+}
 /* Contact */
 
 .container-contact{
@@ -323,7 +338,7 @@ nav{
 
 .contact h4{
   color: #fff;
-  font-size: 1.9em;
+  font-size: 1.3em;
 }
 
 .contact .resume i{
@@ -344,12 +359,7 @@ nav{
 
 .item-contact{
   background-color: #b14c5a;
-  margin-top: 150px;
   box-shadow: 0px 1px 10px black;
-}
-
-.item-contact .item-0{
-  padding: 1.7em;
 }
 
 .item-contact .item-0::after{
