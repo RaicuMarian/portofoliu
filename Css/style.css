@@ -6,7 +6,7 @@
 body{
   line-height: 1.4;
   letter-spacing: 1.4;
-  background-color: #f4f4f4;
+  background-color: #f2f2f2;
   color: #fff;
   font-family: lato, Helvetica, sans-serif;
   font-size: 17px;
@@ -80,7 +80,7 @@ nav{
 
 #myName{
   color:#fff;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .mySelf{
@@ -95,8 +95,13 @@ nav{
 }
 
 .socialMedia a {
- font-size: 1.3em;
+ font-size: 1.5em;
  margin: 3px;
+}
+
+#item1{
+  margin-right: 20px;
+
 }
 
 .button1 button{
@@ -323,7 +328,7 @@ nav{
 
 .container-contact{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   background-color: #b14c5a;
 }
 
@@ -341,17 +346,17 @@ nav{
   font-size: 1.3em;
 }
 
-.contact .resume i{
+#resume{
   font-size: 40px;
   font-weight: lighter;
   border: 1px solid #f4f4f4;
   padding: 10px 60px;
   border-radius: 30px;
   margin-top: 50px;
-  color: #f4f4f4;
+  color: #a7a2a2;
 }
 
-.contact .resume i:hover{
+#resume:hover{
   background-color: #f4f4f4;
   color: #b14c5a;
   transition:0.5s;
