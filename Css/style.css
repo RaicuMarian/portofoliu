@@ -58,7 +58,7 @@ nav{
   color: #b14c5a;
 }
 
-/* Prima Sectiune */
+/* Prima Sectiune - 'Big image' - */
 
 .bigImage{
   background: linear-gradient(to right,
@@ -74,8 +74,11 @@ nav{
   justify-content: center;
 }
 
-.socialMedia a:link{
-  color: #fff;
+.profile-pic{
+  height: auto;
+  width: 200px;
+  border-radius: 50%;
+
 }
 
 #myName{
@@ -99,10 +102,30 @@ nav{
  margin: 3px;
 }
 
+.socialMedia a:link{
+  color: #fff;
+}
+
 #item1{
   margin-right: 20px;
 
 }
+
+.about-me-buttons{
+  display:grid;
+  grid-gap: 1vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-button{
+  justify-self: end;
+}
+
+.github-button{
+  justify-self: start;
+}
+
+
 
 .button1 button{
   margin-top: 50px;
@@ -120,45 +143,46 @@ nav{
   transition: 0.7s;
 }
 
-/* General queries */
-
-
 
 /* Sectiunea main */
 
 .main{
   color:black;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .container-card {
-  display: flex;
+  display: grid;
   align-items: center;
   margin-top: 20vh;
   justify-content: center;
-  
+  grid-template-areas: 
+   "cardTitlu cardDetalii";
+  grid-template-columns: 1fr 2fr;
 }
+
+
+
+.cardDetalii{
+  grid-area: cardDetalii;
+}
+
+.cardTitlu{
+  grid-area: cardTitlu;
+}
+
 
 .cardTitlu {
   background-color: #b14c5a;
   display: grid;
+  justify-self: end;
   align-items: center;
   text-align: center;
-  width: 30%;
-  min-height: 70vh;
-  border-radius: 5px 0 0  5px;
+  width: 20vw;
+  height: 70vh;
   box-shadow: 5px 0 4px rgba(0, 0, 0, 0.25);
   z-index: 2;
 }
 
-@media (max-width:700px) {
-  .cardTitlu {max-height: 70vh;}
-  .cardDetalii{ 
-    max-height: 60vh;
-    font-size: 14px;
-  }
-}
 
 .cardTitlu p{
   color: #fff;
@@ -180,9 +204,11 @@ nav{
 
 .cardDetalii {
   background-color: white;
+  display: grid;
+  align-items: center;
   color: #919191;
   text-align: center;
-  width: 40%;
+  width: 53vw;
   min-height: 60vh;
   box-shadow: 5px 0 4px rgba(0, 0, 0, 0.30);
 }
@@ -191,12 +217,7 @@ nav{
   padding: 2em;
 }
 
-@media(min-width: 700px){
 
-  .cardDetalii p{
-    margin-top: 10vh;
-  }
-}
 /* Sectiunea A - Skills */
 
 .container-grid{
@@ -210,6 +231,7 @@ nav{
 .item{
   text-align: center;
   padding: 2em;  
+  width: auto;
 }
 
 .item h4{
@@ -219,7 +241,12 @@ nav{
   font-size: 17px;
 }
 
-.item p, li{
+.item p{
+  color: #919191;
+  padding: 0 5px 0 5px;
+}
+
+.item li{
   color: #919191;
 }
 
@@ -238,6 +265,7 @@ nav{
    "proiect-1      descriere-1"
    "descriere-2      proiect-2"
    "proiect-3      descriere-3"
+   "descriere-4      proiect-4"
 }
 
 .project-1{
@@ -264,28 +292,22 @@ nav{
   grid-area: descriere-3;
 }
 
-@media (max-width: 700px){
-
-  .container-projects{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    grid-template-areas: 
-     "proiect-1"  
-     "descriere-1"
-     "proiect-2"
-     "descriere-2"
-     "proiect-3"
-     "descriere-3"
-  }
-
+.descriere-4 {
+  grid-area: descriere-4;
 }
+
+.project-4 {
+  grid-area: proiect-4 ;
+}
+
+
 
 .project{
   color: #919191;
   padding: 20px;
   text-align: center;
   margin-bottom: 90px;
+  align-self: center;
 }
 
 .projects img{
@@ -328,8 +350,9 @@ nav{
 
 .container-contact{
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
   background-color: #b14c5a;
+  padding: 10px;
 }
 
 .contact .adress p{
@@ -341,20 +364,34 @@ nav{
   color: #f4f4f4;
 }
 
+.contact .item-0{
+  margin: 0;
+  padding: ;
+}
+
 .contact h4{
   color: #fff;
   font-size: 1.3em;
 }
 
+.item-resume{
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 #resume{
   font-size: 40px;
-  font-weight: lighter;
+  font-size: 20px;
   border: 1px solid #f4f4f4;
-  padding: 10px 60px;
-  border-radius: 30px;
+  padding: 10px 30px;
+  border-radius: 25px;
   margin-top: 50px;
   color: #a7a2a2;
 }
+
+
 
 #resume:hover{
   background-color: #f4f4f4;
@@ -364,7 +401,6 @@ nav{
 
 .item-contact{
   background-color: #b14c5a;
-  box-shadow: 0px 1px 10px black;
 }
 
 .item-contact .item-0::after{
@@ -377,14 +413,103 @@ nav{
     background: #fff;
   }
 
+  .item-adress{
+    padding-top: 5vh;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10vw;
+  }
+
   /* Footer */
 
   .footer{
     color: #b14c5a;
+    display: grid;
+    align-items: center;
     height: 10vh;
     text-align: center;
   }
 
   .footer p{
-    padding: 20px;
+    padding: 10px;
   }
+
+
+  /* Media queries */
+
+  /* Media for the projects area */
+@media (max-width: 700px){
+
+  .container-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    grid-template-areas: 
+     "proiect-1"  
+     "descriere-1"
+     "proiect-2"
+     "descriere-2"
+     "proiect-3"
+     "descriere-3"
+     "proiect-4"
+     "descriere-4"
+  }
+
+}
+
+/* Media for the About Me area and the padding for the Skills area at the bottom */
+
+@media (max-width: 700px){
+  .container-card {
+    display: grid;
+    align-items: center;
+    margin-top: 10vh;
+    justify-content: center;
+    grid-template-areas: 
+     "cardTitlu" 
+     "cardDetalii";
+  }
+
+
+  .cardTitlu {
+    height: 20vh;
+    width: 100vw;
+
+  }
+  .cardDetalii{ 
+    height: auto;
+    font-size: 14px;
+    min-width: 80vw;
+    justify-self: center;
+  }
+
+  .cardDetalii p{
+    margin-top: 10vh;
+  }
+
+  .container-grid > .item{
+    padding: 2em 0 2em 0;
+    width: 100vw;
+  }
+
+
+  .item-adress{
+    
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+
+/* Media for the Name and pic area*/
+
+@media (max-width: 700px){
+  .main-details{
+    margin-top: 50vh;
+  }
+
+  #myName{
+    font-size: small;
+  }
+}

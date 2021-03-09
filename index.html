@@ -42,11 +42,16 @@
     <li><a href="#proiecte">Proiecte</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
+
   <!-- Big Image -->
 
   <section id="home" class="bigImage">
     <div class="mySelf">
-      <h1 id="myName">Raicu Marian</h1>
+      <div class="main-details">
+        <img class="profile-pic" src="./Images/avatar.png" alt="profil">
+        <h1 id="myName">Raicu Marian</h1>
+      </div>
       <div class="socialMedia">
         <a id="item1" href="https://www.facebook.com/raicu.marian.35" target="_blank"><i style="color:#fff"
             class="fab fa-facebook-square"></i></a>
@@ -56,20 +61,30 @@
       </div>
       <p>Aspiring Front-End Developer, with a passion for technology and hunger of knowledge!</p>
 
-      <div class="button1">
-        <button> <a style="color:#a1a1a1;" href="#contact">Contact Me</a></button>
+
+      <div class="about-me-buttons">
+        <div class="button1 contact-button">
+          <a style="color:#a1a1a1;" href="#contact"><button>Contact Me</button></a>
+        </div>
+        <div class="button1 github-button">
+          <a style="color:#a1a1a1;" href="https://github.com/RaicuMarian/portofoliu" target="_blank"><button>See
+              Portfolio on
+              github!</button></a>
+        </div>
       </div>
     </div>
 
   </section>
-  <div id="about"></div>
+
   <!-- About me -->
+
+
   <section class="main">
+    <div id="about"></div>
     <div class="container-card">
       <div class="cardTitlu">
         <p>Despre mine</p>
       </div>
-      <div class="bordura"></div>
       <div class="cardDetalii">
         <p>Hello,</br></br></br>My name is Raicu Marian. I am a student at Politehnica University Timişoara, studying
           for a degree in Informatics. Before I attended the University, I was a self taught wanna be web developer, and
@@ -85,6 +100,8 @@
   </section>
 
   <!-- Skills -->
+
+
   <section id="skills" class="section-a skills">
     <div class="item item-0">
       <h3>SKILLS</h3>
@@ -117,39 +134,50 @@
   </section>
 
   <!-- Projects -->
+
+
   <section id="proiecte" class="projects">
     <div class="item item-0">
       <h3>PROIECTE</h3>
     </div>
     <div class="container-projects">
 
-      <div class="project project-1"><img src="Images/Traditie.jpg" alt="PrimulProiect"></div>
+      <!-- Proiect 1 -->
+
+      <div class="project project-1"><img src="./Images/aburind.png" alt="PrimulProiect"></div>
       <div class="project descriere-1">
+        <p>Project that i made for a Web Development course inside the <abbr
+            title="ROmania Second Education Project">ROSE</abbr> project for college. </p>
+        <p><span class="usedTech">I've used: Html, Css, Css Grid, JavaScript(<small>Some to none</small>).</span></p>
+
+        <div class="details-btn">
+          <a href="https://aburind.000webhostapp.com/index.html?fname=&lname=" target="_blank">
+            <div class="btn-2">View Live</div>
+          </a>
+          <a href="https://github.com/RaicuMarian/Aburind-Brutaria-Bunicii" target="_blank">
+            <div class="btn-2">View on Github</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proiect 2 -->
+
+      <div class="project descriere-2">
         <p>Presentation website made for a family member, to promote some hand-made items.</p>
         <p><span class="usedTech">I've used: Html, Css, Bootstrap.</span></p>
-
         <div class="details-btn">
           <a href="http://popular.infinityfreeapp.com/index.html" target="_blank">
             <div class="btn-2">View Live</div>
           </a>
           <a href="https://github.com/RaicuMarian/traditie" target="_blank">
             <div class="btn-2">View on Github</div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project descriere-2">
-        <p>Website made for a friend's son, so that he could learn animal sounds in a more fun way.</p>
-        <p><span class="usedTech">I've used: Html, Css, JavaScript.</span></p>
-        <div class="details-btn">
-          <a href="http://thefarm.infinityfreeapp.com/?i=1" target="_blank">
-            <div class="btn-2">View Live</div>
-          </a>
-          <a href="https://github.com/RaicuMarian/The-Farm" target="_blank">
-            <div class="btn-2">View on Github</div>
         </div></a>
       </div>
-      <div class="project project-2"><img src="Images/TheFarm.jpg" alt="PrimulProiect"></div>
+      <div class="project project-2"><img src="Images/Traditie.jpg" alt="PrimulProiect"></div>
+
+
+      <!-- Proiect 3 -->
+
 
       <div class="project project-3"><img src="Images/mars.jpg"></div>
       <div class="project descriere-3">
@@ -164,8 +192,26 @@
         </div></a>
       </div>
 
+      <!-- Proiect 4 -->
+
+      <div class="project descriere-4">
+        <p>Website made for a friend's son, so that he could learn animal sounds in a more fun way.</p>
+        <p><span class="usedTech">I've used: Html, Css, JavaScript.</span></p>
+        <div class="details-btn">
+          <a href="" target="_blank">
+            <div class="btn-2">View Live</div>
+          </a>
+          <a href="https://github.com/RaicuMarian/The-Farm" target="_blank">
+            <div class="btn-2">View on Github</div>
+        </div></a>
+      </div>
+      <div class="project project-4"><img src="Images/TheFarm.jpg" alt="PrimulProiect"></div>
+
+
     </div>
   </section>
+
+
 
   <!-- Contact -->
   <section id="contact" class="contact">
@@ -173,24 +219,32 @@
       <div class="item item-0">
         <h3>CONTACT</h3>
       </div>
-    </div>
-    <div class="container-contact">
 
-      <div class="item resume">
-        <h4>Download my resume:</h4>
-        <form method="get" action="./Raicu Marian.pdf">
-          <button id="resume" type="submit">Download!</button>
-        </form>
+      <div class="container-contact">
+
+        <div class="item-resume">
+          <h4>Download my resume:</h4>
+          <form class="form-resume" method="get" action="./Raicu Marian.pdf">
+            <button id="resume" type="submit">Download!</button>
+          </form>
+        </div>
+
+        <div class="item-adress">
+
+          <div>
+            <h4>My E-mail:</h4>
+            <p><a href="raicumarian35@gmail.com"></a>raicumarian35@gmail.com</p>
+          </div>
+
+
+          <div>
+            <h4>Where to find me?</h4>
+            <p>Timisoara, jud. Timis</p>
+          </div>
+
+
+        </div>
       </div>
-
-      <div class="item adress">
-        <h4>Where to find me?</h4>
-        <p>Timisoara, jud. Timis</p>
-
-        <h4>My E-mail:</h4>
-        <p><a href="raicumarian35@gmail.com"></a>raicumarian35@gmail.com</p>
-      </div>
-
 
 
     </div>
