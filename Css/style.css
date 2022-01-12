@@ -656,3 +656,24 @@ nav{
   }
   
 }
+
+/* Media queries for Certificari Gallery */
+
+@media (max-width: 700px){
+  .cerificari{
+    padding: 2em;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+    height:auto;
+    justify-items: center;
+    filter: drop-shadow(3px 3px 10px #000);
+    }
+
+  .overlay-inner {
+    background: white;
+    width: auto;
+    padding: 0;
+  }
+}
