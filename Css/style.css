@@ -220,6 +220,11 @@ nav{
 
 /* Sectiunea A - Skills */
 
+#skills{
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
 .container-grid{
   color: black;
   display: grid;
@@ -319,6 +324,11 @@ nav{
   align-self: center;
 }
 
+.projects{
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
 .projects img{
   width: 100%;
   /* box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.30); */
@@ -372,6 +382,8 @@ nav{
   /* Certificari Gallery */
 
  .cerificari{
+  margin-left: 15em;
+  margin-right: 15em;
   padding: 2em;
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -550,7 +562,7 @@ nav{
   /* Media queries */
 
   /* Media for the projects area */
-@media (max-width: 700px){
+@media (max-width: 1024px){
 
   .container-projects{
     display: grid;
@@ -612,6 +624,11 @@ nav{
     grid-template-columns: 1fr;
     
   }
+
+  #skills{
+    margin-left: 0;
+    margin-right: 0;
+}
 }
 
 
@@ -654,13 +671,29 @@ nav{
   .detailsParagraf{
     font-size: small;
   }
+
+  .projects{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .project{
+    margin-bottom: 1em;
+  }
   
 }
 
 /* Media queries for Certificari Gallery */
 
 @media (max-width: 700px){
+
+  #certificari{
+    margin-top: 0;
+  }
+
   .cerificari{
+    margin-left: 0;
+    margin-right: 0;
     padding: 2em;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
