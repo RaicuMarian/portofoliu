@@ -62,8 +62,8 @@ nav{
 
 .bigImage{
   background: linear-gradient(to right,
-   rgba(44, 62, 80, 0.6),
-   rgba(177, 76, 90, 0.6)),
+   rgba(85, 114, 143, 0.6),
+   rgba(124, 14, 29, 0.6)),
    url(../Images/mountain.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
